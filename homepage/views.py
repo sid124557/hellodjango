@@ -8,3 +8,5 @@ class HomepageView(TemplateView):
                 context = super().get_context_data(**kwargs)
                 context['my_statement'] = 'Nice to see you!'
                 return context
+        def say_bye(self): # add this line
+                return 'Goodbye' # and this line too!
